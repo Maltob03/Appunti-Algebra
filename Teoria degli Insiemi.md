@@ -213,6 +213,8 @@ $S$ $\setminus$ ($T$ $\bigcup$ $V$) = ($S$ $\setminus$ $T$) $\bigcap$ ($S$ $\set
 
 ##Proprietà dell'operatore differenza simmetrica
 
+####Distributività dell'intersezione rispetto la differenza simmetrica
+
 $A$ $\bigcap$ ($B$ $\Delta$ $C$) = ($A$ $\bigcap$ $B$) $\Delta$ ($A$ $\bigcap$ $C$)
 
 ####Non vale la distributività dell'unione rispetto la differenza simmetrica
