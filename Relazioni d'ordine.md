@@ -154,6 +154,6 @@ $\forall$ $a$ $\in$ $S$ $a$ $\in$ $[a]_{R}$ $\subseteq$ $\bigcup$ $[b]_{R}$
 
 S = $\bigcup$ $[a]_{R}$
 
-**Sto punto non è proprio chiarissimo**
+**Sto punto non è proprio chiarissimo** invece si
 
 
