@@ -97,6 +97,8 @@ Consideriamo un generico insieme $S$ e una relazione $R$ $\rightarrow$ ($S,R)$
 
 $\forall$ $a$ si dice classe di $a$ modulo $R$ $\in$ $S$ $[a]_{R}$ = { $x$ $\in$ $S$ : $aRx$ }
 
+In altre parole, $[a]_R$ è il sottoinsieme di A formato da tutti gli elementi che sono equivalenti ad a. In particolare, dire che $x$ $\in$ $[a]_{R}$, o che x appartiene alla classe di equivalenza di $a$, significa dire che $x$ è equivalente ad $a$.
+
 ####1. $\forall$ a $\in$ S $[a]_R$ è sempre diverso dal $\varnothing$
 $[a]_R$ $\not$ = $\varnothing$ : $\forall$ $a$ $\in$ $S$ $a$ $\in$ $[a]_{R}$
 
@@ -157,3 +159,153 @@ S = $\bigcup$ $[a]_{R}$
 **Sto punto non è proprio chiarissimo**
 
 
+<br>
+
+
+##Insieme quoziente e partizione
+
+Gli elementi dell’insieme quoziente $S_{R}$ sono le classi di equivalenza degli elementi di S. Quindi una classe di equivalenza $[a]_R$ pu`o essere vista o come un sottoinsieme di S, o come un elemento dell’insieme quoziente $S/_{R}$.
+
+$S_{/R}$ = { $[a]_{R}$ : $a$ $\in$ $S$ }
+
+$S$ insieme $\not$= $\varnothing$  
+
+L'insieme $F$ $\subseteq$ $P(s)$ è una partizione di $S$ $\iff$ :
+
+1. $\forall$ $A$ $\in$ $F$ $A$ $\not$= $\varnothing$
+2. $\forall$ $a,B$ $\in$ $F$ se $A$ $\not$= $B$ $\implies$ $A$ $\land$ $B$ = $\varnothing$
+3. $\bigcup$ $A$ = $S$
+
+$S_{/R}$ è una partizione di $S$.
+
+
+
+####Teorema 
+
+Se $R$ è una relazione di equivalenza in $S$ allora : $S_{R}$ è una partizione di $S$.
+
+Se $F$ è una partizione di $S$ posto $xR_{F}y$ $\iff$ $\in$ $A$ $\in$ $F$ : $x,y$ $\in$ $A$
+
+Allora $R_{F}$ è una relazione di equivalenza e l'insieme quoziente coincide con la partizione di $S$.
+
+---
+
+Dimostrazione punto 1:
+
+$S_{R}$ = {$[a]_{R}$ : a $\in$ $S$}
+
+i) $\forall$ a $\in$ $S$ $a$ $\in$ $[a]_{R}$ $\not$= $\varnothing$ e $\bigcup$ $[a]_{R}$ = $S$
+
+ii) $\forall$ $a,b$ $\in$ $S$ se $[a]_{R}$ $\not$= $[b]_{R}$ $\implies$ $[a]_{R}$ $\bigcap$ $[b]_{R}$ = $\varnothing$ 
+
+$S_{R}$
+
+---
+
+Dimostrazione punto 2:
+
+Sia $F$ una partizione di S
+
+$xR_{F}y$ $\iff$ $\exists$ $A$ $\in$ $F$ : $x,y$ $\in$ $A$
+
+$xR_{F}y$ Riflessiva quindi 
+
+$\forall$ $x,y$ $\in$ $S$ se $xR_{F}y$ $\implies$  $\exists$ $A$ : $x,y$ $\in$ $A$ , ma anche $y,x$ $\in$ $A$ 
+
+$yR_{F}x$ è simmetrica
+
+Infine è anche transitiva quindi:
+
+$\forall$ $x,y,z$ $\in$ $S$ se $xR_{f}y$ e $yR_{f}z$
+
+x,y $\in$ $A$ , $y,z$ $\in$ $B$ $\implies$ $A$ $\bigcap$ $B$ $\not$= $\varnothing$ $\implies$ $A=B$ $\implies$ $x,z$ $\in$ $A$
+
+---
+
+###Teorema fondamentale delle relazioni di equivalenza 
+
+Sia $S$ $\not$= $\varnothing$ allora :
+
+Se $R$ è una relazione di equivalenza allora $S_{R}$ determina una partizione di $S$
+
+Se $F$ è una partizione di $S$ allora la relazione $xR_{F}y$ $\iff$ $\exists$ $A$ $\in$ $F$ : $x,y$ $\in$ $A$ determina una relazione di equivalenza in $S$ e $S_{RF}$ = $F$
+
+Dimostrazione punto 1:
+
+Se $R$ è una relazione di equivalenza
+
+$S_{/R}$ = { $[a]_{R}$ : $a$ $\in$ $S$ }
+
+allora:
+
+1. $\forall$ $a$ $\in$ $S$ $[a]_{R}$ $\not$= $\varnothing$
+2. $\bigcup$  $[a]_{R}$ $\not$= $\varnothing$
+3. $[a]_{R}$ $\bigcap$ $[b]_{R}$ $\not$= $\varnothing$ $\iff$ $aRb$ $\iff$ $[a]_{R}$ = $[b]_{R}$
+
+
+---
+
+Dimostrazione punto 2:
+
+$F$ una partizione $xR_{F}y$ $\exists$ $A$ $\in$ $F$ : $x,y$ $\in$ $A$
+
+1. $\forall$ $a$ $\in$ $S$ $\exists$ $A$ $\in$ $F$ : $a$ $\in$ $A$ ( $\bigcup$$A$ = $S$)
+
+$a,a$ $\in$ $A$ $a$$R_{F}$$a$ riflessiva
+
+2. $\forall$ $a,b$ $\in$ $S$ se $a$$R_{F}$$b$ $\iff$ $\exists$ $A$ $\in$ $F$ : $a,b$ $\in$ $A$ $(b,a $ $\in$ $A$ )$ $
+Quindi $bR_{f}a$ simmetrica
+
+3. $\forall$ $a,b,c$ $\in$ $S$ se $a$$R_{F}$$b$ $\iff$ $\exists$$ A$$\in$ $F$ : $a,b$ $\in$ $A$
+$b$$R_{F}$$c$ $\iff$ $\exists$ $B$$\in$ $F$ : $b,c$ $\in$ $B$
+
+Se $A$ $\bigcap$ $B$ $\not$= $\varnothing$ $\implies$ $A=B$ quindi $a,b,c$ $\in$ $A=B$ $\implies$ $aR_{f}c$
+
+---
+
+Teorema di caratterizzazione della relazione di equivalenza
+
+Siano due insiemi $S,T$ $\not$= $\varnothing$ e $f$: $S$ $\rightarrow$$T$ un' applicazione.
+Allora $\forall$ $x,y$ $\in$ $S$ $xR_{f}y$ $\implies$ $f(x)=f(y)$ 
+
+$R_{f}$ è una relazione di equivalenza (nucleo di equivalenza) e 
+
+$f^{*}$ : $S_{/RF}$ $\rightarrow$ $T$ 
+$[x]_{Rf}$ $\rightarrow$ $f^{*}$ ( $[x]_{Rf}$) = $f(x)$ 
+è un applicazione ineittiva
+
+Dimostrazione 
+
+---
+
+$f$: $S$ $\rightarrow$ $T$ 
+
+$xR_{f}y$ $\iff$ $f(x)$ = $f(y)$
+
+1. Riflessiva : $\forall$ $x$ $\in$ $S$ $f(x)=f(x)$, $xR_{f}x$
+2. Simmetrica : $\forall$ $x,y$ $\in$ $S$ se $f(x)=f(y)$ allora $f(y)=f(x)$ quindi $xR_{f}y$ $\implies$ $yR_{f}x$
+3. Transitiva : $\forall$ $x,y,z$ $\in$ $S$ se $f(x)=f(y)$ $\land$ $f(y)=f(z)$ $\implies$ $f(x)=f(z)$ 
+
+$xR_{f}y$ $\land$ $yR_{f}z$ $\implies$ $xR_{f}z$
+
+$[x]_{Rf}$ = {$y$ $\in$ $S$ : $f(x)=f(y)$} = $f^{-1}x$
+
+L'applicazione $f^{*}$ : $[x]_{Rf}$ $\in$ $S_{/Rf}$ $\rightarrow$ $f^{*}([x]_{Rf})$ = $f(x)$
+
+$f(x)$ = $f^{*}([x]_{Rf})$ = $f^{*}([y]_{Rf})$ = $f(y)$ $\iff$ $xR_{f}y$ $\iff$ $[x]_{Rf}$ = $[y]_{Rf}$
+
+
+####Osservazione
+
+La relazione $R_{f}$ = $id_{s}$ $\iff$ 
+
+$\forall$ $a$ $\in$ $S$ $[a]_{Rf}$ = {$a$} $\iff$ [$f(x)$ = $f(a)$ $\iff$ $x=a$] $\iff$ $f$ sia iniettiva
+
+**Esempio:**
+
+$f$: $x$ $\in$ $\mathbb{Z}$ $\implies$  $5x+1$ $\in$ $\mathbb{Z}$
+
+$R_{f}$ = $id_{Z}$ 
+$[25] = {25}$
+
+$g:$ $x$ $\in$ $\mathbb{Z}$ $\implies$ $5x^2+1$ $\in$ $\mathbb{Z}$
