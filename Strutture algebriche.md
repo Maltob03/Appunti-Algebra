@@ -73,11 +73,11 @@ L'elemento neutro per il semigruppo ($S^{S}$, $\circ$) corrisponde all' $id_{s}$
 
 Per quanto riguarda $P(s)$:
 
-($P(s)$, $\bigcup$ ) : $A$ $\bigcup$ $S$ = $A$ = $S$ $\bigcup$ $A$. 
+($P(s)$, $\bigcap$ ) : $A$ $\bigcap$ $S$ = $A$ = $S$ $\bigcap$ $A$. 
 
 Quindi $u$ = $S$
 
-($P(s)$, $\bigcap$ ) : $A$ $\bigcup$ $\varnothing$ = $A$ = $S$ $\bigcup$ $\varnothing$.
+($P(s)$, $\bigcup$ ) : $A$ $\bigcup$ $\varnothing$ = $A$ = $\varnothing$ $\bigcup$ $A$.
 
 Quindi $u$ = $\varnothing$
 
@@ -158,3 +158,128 @@ $b'$ $*$ $a'$ $*$ $a$ $*$ $b$ = $u_{s}$
 
 
 ##Gruppi
+
+( $S$ , $\perp$) è un **gruppo** $\iff$ 
+
+1. ( $S$ , $\perp$ ) è un monoide
+2. Tutti gli elementi di S sono simmetrizzabili $\rightarrow$ $U_{G}$ = $G$
+
+##Gruppi Abeliani
+
+( $S$ , $\perp$ ) è un gruppo abeliano $\iff$ 
+1. ( $S$ , $\perp$ ) è un gruppo
+2. ( $\perp$ ) gode della proprietà commutativa.
+
+
+##Anelli
+
+Fino ad ora abbiamo visto tutte strutture dove era definita una singola operazione. In un anello sono definite due operazioni binarie interne.
+
+( $A$ , $*$ , $\perp$ ) è un esempio di anello.
+
+Si definisce anello $\iff$ 
+
+1. ( $A$ , $*$ ) gruppo abeliano
+2. ( $A$ , $\perp$ ) semigruppo
+3. $\forall$ $a,b,c$ $\in$ $A$
+
+**L'anello deve godere della proprietà distributiva di $\perp$ rispetto a $*$**
+
+i) $a$ $\perp$ ( $b$ $*$ $c$ ) = $a$ $\perp$ $b$ $*$ $a$ $\perp$ $c$
+
+ii) ( $b$ $*$ $c$ ) $\perp$ $a$ = $b$ $\perp$ $a$ $*$ $c$ $\perp$ $a$
+
+
+
+Se $\perp$ è commutativa si dice **Anello Commutativo**
+
+Se ( $A$ , $\perp$ ) è monoide si dice **Anello Unitario**
+
+
+Esempi di anelli unitari sono:
+
+( $\mathbb{Z}$ . +, $\bullet$ ) Anello commutativo unitario
+( $\mathbb{K}$ . +, $\bullet$ )
+
+
+Esempio di verifica di un anello:
+
+---
+
+Verificare che ( $P(s)$ , $\Delta$ , $\bigcap$ ) Anello commutativo unitario
+
+
+Primo passo verificare quindi che ( $P(s)$ , $\bigcap$ ) sia monoide.
+
+1. Deve godere della proprietà associativa.
+2. Deve avere elemento neutro
+
+
+Verifica del primo punto:
+
+$\forall$ $A, B, C$ $\in$ $P(s)$ :
+
+ $A$ $\bigcap$ ( $B$ $\bigcap$ $C$) = ( $A$ $\bigcap$ $B$ ) $\bigcap$ $C$
+ 
+Verifica del secondo punto:
+ 
+ In $P(s)$ con l'operazione $\bigcap$ sappiamo che l'elemento neutro è $S$ in quanto :
+ 
+ ($P(s)$, $\bigcap$ ) : $A$ $\bigcap$ $S$ = $A$ = $S$ $\bigcap$ $A$. 
+ 
+ Quindi l'elemenento neutro è $S$
+ 
+
+Secondo passo verificare che ( $P(s)$ , $\Delta$ ) gruppo abeliano :
+
+   Verifica primo punto verifichiamo che abbia tutti gli elementi simmetrizzabili:
+
+Considerando che $A$ $\Delta$ $A$ = $\varnothing$ quindi $A'$ = $A$, di conseguenza tutti gli elementi sono simmetrizzabili.
+
+   Verifica secondo punto gode della proprietà commutativa.
+   
+  $A$ $\Delta$ $B$ = $B$ $\Delta$ $A$
+  
+  $A$ $\Delta$ $B$ = ( $A$ $\setminus$ $B$ ) $\bigcup$ ( $B$ $\setminus$ $A$ ) = ( $A$ $\bigcup$ $B$ ) $\setminus$ ( $A$ $\bigcap$ $B$ ) 
+  
+  Lo stesso è per  $B$ $\Delta$ $A$ quindi l'operazione gode della proprietà commutativa.
+  
+  
+  
+  Ora so che ( $P(s)$ , $\Delta$ ) gruppo abeliano
+  So che ( $P(s)$ , $\bigcap$ ) semigruppo.
+  
+  
+  Rimane da verificare la terza condizione per essere un anello ovvero :
+  
+  $A$ $\bigcap$ ( $B$ $\Delta$ $C$ ) = ( $A$ $\bigcap$ ) $\Delta$ ( $B$ $\bigcap$ $C$ )
+  
+  Si puo scrivere come : $A$ $\bigcap$ ( ( $B$ $\setminus$ $C$) $\bigcup$ ( $S$ $\setminus$ $B$ ) ) =
+  
+ ( $A$ $\bigcap$ (  $B$ $\setminus$ $C$) ) $\bigcup$ ( $A$ $\bigcap$ (  $C$ $\setminus$ $B$) )
+ 
+ 
+ Essendo distributiva a destra lo sarà anche a sinistra per la proprietà commutativa. Ne risulta che è un anello commutativo unitario.
+ 
+ 
+##Corpo 
+
+Si definisce corpo $\iff$ 
+
+1. ( $A$ , $+$ , $\bullet$ ) anello unitario
+2. ( $A^{*}$ , $\bullet$ ) gruppo (dove $A^{*}$ = $A$ $\setminus$ {$0$} )
+
+
+##Campo
+
+Si definisce campo $\iff$ 
+
+( $A$ , $+$ , $\bullet$ ) corpo
+( $\bullet$ ) è commutativa
+
+
+Esempi di campo sono :
+
+( $\mathbb{K}$ , $+$, $\bullet$ ) 
+
+( $\mathbb{Z}$ , $+$, $\bullet$ ) **Non è un campo**
