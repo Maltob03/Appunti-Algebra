@@ -113,7 +113,7 @@ Se si trovano piu di due elmenti neutri a destra e a sinistra non esiste element
 
 ##Elemento simmetrizzabile
 
-$a$ $\in$ $S$ si dice simmetrizzabile $\iff$ $a'$ $\in$ $S$ | 
+$a$ $\in$ $S$ si dice simmetrizzabile (o invertibile) $\iff$ $a'$ $\in$ $S$ | 
 $a$ $*$ $a'$ = $a'$ $*$ $a$ = $u_{s}$
 
 Esempi di elementi simmetrizzabili:
@@ -155,6 +155,39 @@ $b'*a'$ è il simmetrico.
 Nel secondo passaggio $a$ $*$ $u_{s}$ corrisponde ad $a$ da qui $a$ $*$ $a'$ = $u_{s}$
 
 $b'$ $*$ $a'$ $*$ $a$ $*$ $b$ = $u_{s}$
+
+
+**Proposizione :** 
+Sia $f$ : $S$ $\rightarrow$ $T$ 
+1. $f$ è invertibile a sinistra $\iff$ $f$ è iniettiva
+2. $f$ è invertibile a destra $\iff$ $f$ è suriettiva
+3. $f$ è invertibile $\iff$ $f$ è biettiva
+
+Dimostrazioni:
+
+1.
+$\rightarrow$  
+$\exists$ $h$ : $T$ $\rightarrow$ $S$ : $h$ $\circ$ $F$ = $id_{s}$
+sia $f(x)$ = $f(y)$ $\rightarrow$ $h(f(x))$ = $h(f(y))$ = $y$
+$\leftarrow$ 
+$\forall$ $a$ $\in$ $T$ | $f^{-1}$ $({a})$ $\not$= $\varnothing$
+
+$g$ : $a$ $\in$ $T$ $\rightarrow$ $xa$ se $f^{-1}(a)$ = {$xa$} oppure h se $f^{-1}(a)$ = $\varnothing$
+$g$$\circ$$f$ ($x$) = $g(f(x))$ = $x$
+$g$$\circ$$f$ = $id_{s}$
+
+2.
+$\rightarrow$
+$\exists$ $h$ : $T$ $\rightarrow$ $S$ : $f$ $\circ$ $h$ = $id_{T}$
+$f$ $\circ$ $h$ ($a$) = $a$
+
+$\forall$ $a$ $\in$ $T$ $\exists$ $x$ = $h(a)$ : $f(x)$ = $f(h(a))=a$
+$\leftarrow$ 
+
+$\forall$ $\in$ $T$ $f^{-1}(a)$ $\not$ = $\varnothing$ $h$ : $a$ $\in$ $T$ $\rightarrow$ $xa$ $\in$ $S$
+
+($f$ $\circ$ $h$) ($a$) = $f(h(a))$ =$a$ 
+ 
 
 
 ##Gruppi
@@ -282,4 +315,130 @@ Esempi di campo sono :
 
 ( $\mathbb{K}$ , $+$, $\bullet$ ) 
 
-( $\mathbb{Z}$ , $+$, $\bullet$ ) **Non è un campo**
+( $\mathbb{Z. }$ , $+$, $\bullet$ ) **Non è un campo**
+
+
+##Elementi cancellabili
+
+Consideriamo sempre un insieme $S$ con operazione interna $*$ : ( $S$ , $*$ )
+
+$a$ $\in$ $S$ è cancellabile a destra $\iff$ 
+
+$\forall$ $b,c$ $\in$ $S$ 
+
+$b$ $*$ $a$ = $c$ $*$ $a$ $\rightarrow$ $b$ = $c$
+
+$a$ è cancellabile $\iff$ è cancellabile a destra e a sinistra.
+
+Se $a$ è cancellabile è simmetrizzabile *ma non il viceversa*
+
+
+Se supponiamo $a$ simmetrizzabile quindi:
+
+$\exists$ $a'$ : $a$ $*$ $a'$ = $a'$ $*$ $a$ = $u$
+
+
+$b$ $*$ $a$ = $c$ $*$ $a$ $\rightarrow$ ( $b$ $*$ $a$ ) $*$ $a'$ = ( $c$ $*$ $a$ ) $*$ $a'$ 
+
+$b$ $*$ ( $a$ $*$ $a'$ ) = $c$ $*$ ( $a$ $*$ $a'$ )
+
+$b$ $*$ $u$ = $c$ $*$ $u$ 
+
+$b$ = $c$ 
+
+
+##Prolungamenti e restrizioni
+
+###Restrizioni
+
+Considerando una generica applicazione $f$ : $S$ $\rightarrow$ $T$ e pongo $A$ $\subseteq$ $S$. La restrizione è la seguente applicazione : $f_{A}$ : $A$ $\rightarrow$ $T$ 
+
+Altre restrizioni sono ad esempio $\mathbb{N}$ in $\mathbb{Z}$
+
+*Ricorda si restringe sempre il dominio mai il codominio*
+
+
+###Prolungamenti
+
+Considerando una generica applicazione $f$ : $S$ $\rightarrow$ $T$ e pongo $S$ $\subseteq$ $B$. Il prolungamento sarà $g$ : $B$ $\rightarrow$ $T$ $\iff$ $g_{S}$ = $f$
+
+
+I prolungamenti non sono unici, l'importante è che sugli elementi di $S$ l'applicazione agisca nello stesso modo.
+
+
+**ESEMPIO DI RESTRIZIONE**
+
+$f(x_{1}, x_{2})$ $\in$ $\mathbb{Z}^{*}$ x $\mathbb{Z}^{*}$ $\rightarrow$ $\frac{x_{1}}{x_{2}}$ $\in$ $\mathbb{Q}$ 
+
+$f(x_{1}, x_{2})$ $\in$ $S$ $\rightarrow$ $\frac{x_{1}}{x_{2}}$ $\in$ $\mathbb{Q}$ con $S$ = $2^{x}$ x {$-1$} 
+
+$f(x_{1}, x_{2})$ $\in$ $S$ $\rightarrow$ $\frac{x_{1}}{-1}$ = $-x_{1}$
+
+**ESEMPIO DI PROLUNGAMENTO**
+
+Trova due prolungamenti alla seguente applicazione considerando che $T$ = $Q$ x $Q$
+
+$f(x_{1}, x_{2})$ $\in$ $\mathbb{Z}^{*}$ x $\mathbb{Z}^{*}$ $\rightarrow$ $\frac{x_{1}}{x_{2}}$ $\in$ $\mathbb{Q}$ 
+
+
+$g1$ : $f(x_{1}, x_{2})$ $\in$ $\mathbb{Q}^{*}$ x $\mathbb{Q}^{*}$ $\rightarrow$ $\frac{x_{1}}{x_{2}}$ $\in$ $\mathbb{Q}$ 
+  
+$g2$ : $f(x_{1}, x_{2})$ $\in$ $\mathbb{Q}^{*}$ x $\mathbb{Q}^{*}$ $\rightarrow$ $\frac{x_{1}}{x_{2}}$ se $x2$ $\not$= $\frac{1}{2}$ o $0$ se $x2$ = $\frac{1}{2}$
+
+
+##Funzioni componibili
+
+Consideriamo tre applicazioni: $f,g,h$
+
+$f$ : $S$ $\rightarrow$ $T$
+$g$ : $T$ $\rightarrow$ $V$
+$f$ : $T$ $\rightarrow$ $V$
+
+il diagramma che ne risulta è commutatvo. Allegherò immagine
+
+Ci saranno degli esempi che necessitano di immagini quindi si farà in un secondo momento.
+
+
+##Osservazioni
+
+Prendiamo in considerazione due insiemi $S,T$ di cui $S$ ha ordine $n$ mentre $T$ ha ordine $m$,
+
+1. Se $n>m$ $\implies$ $\not$$\exists$ $f$: $S$ $\rightarrow$ $T$ iniettiva
+
+2. Se $m>n$ $\implies$ $\not$$\exists$ $f$: $S$ $\rightarrow$ $T$ suriettiva
+
+La dimostrazione è banale:
+
+Consideriamo $S,T$ insiemi finiti
+
+$S = \{a_{1}, a_{2} , ... , a_{n}\}$
+$T= \{b_{1}, b_{2} , ... , b_{n}\}$
+
+se $f$ : $S$ $\rightarrow$ $T$ è iniettiva **P.A**  $\implies$ $\forall$ $i$ $\not$= $j$ $f(a_{i})$ $\not$= $f(a_{j})$ $implies$ $f(s)$ $\subseteq$ $f(t)$ **UN ASSURDO** 
+
+Per il secondo punto si vede a occhio.
+
+<br>
+
+
+##Stabilità di una struttura algebrica
+
+Consideriamo un anello del tipo ( $S$ ,$*$, $\circ$ ), va bene anche un oggetto con una singola operazione definita.
+
+$x$ $\subseteq$ $S$ è stabile rispetto a $*$ $\iff$ 
+
+$\forall$ $x,y$ $\in$ $X$ $x$$*$$y$ $\in$ $X$
+
+
+Esempio:
+
+Consideriamo l'anello ( $\mathbb{Z}$ , $+$ , $*$ ) e $X$ = { $0$, $1$ , $-1$ }
+
+$X$ è stabile rispetto alla moltiplicazione.
+$X$ non è stabile rispetto all'addizione.
+
+(0 $\bullet$ 0), (0 $\bullet$ 1), (0 $\bullet$ -1), (1 $\bullet$ 1), (1 $\bullet$ -1), (-1 $\bullet$ -1)
+
+$\in$ $X$ ($\bullet$) è stabile
+
+**MA** 1+1=2 $\not$$\in$ $X$ e quindi ($+$) non è stabile
