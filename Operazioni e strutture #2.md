@@ -272,4 +272,17 @@ $f(a+b)$ = $f(a)$ $+$ $f(b)$
 
 $2$^{$a$ $\bullet$ $b$} $\not$=  $2^{a+b}$
 
-Niente isomorfismo
+**Niente isomorfismo**
+
+
+##Divisori dello Zero
+
+In un anello ( $A$ , $+$ , $*$) un elemento $a$ $\in$ $A$, con $a$ $\not$= 0 si dice divisore dello 0 se esiste un $b$ $\in$ $A$, $b$ $\not$= 0 tale che sia $a$ $\bullet$ $b$ = 0, oppure $b$ $\bullet$ $a$ = 0
+
+In ( $\mathbb{Z}_{6}$ , $+$ , $\bullet$ ) $[2]$ e $[3]$ sono divisori dello zero. Questo tipo di anello non è stato ancora affrontato vedremo poi nel dettaglio.
+
+( $\mathbb{Z}$ , $+$ , $\bullet$ )
+( $\mathbb{Q}$ , $+$ , $\bullet$ )
+( $\mathbb{Z}_{5}$ , $+$ , $\bullet$ )
+
+Sono privi di divisori dello zero.
