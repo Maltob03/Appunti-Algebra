@@ -286,3 +286,19 @@ In ( $\mathbb{Z}_{6}$ , $+$ , $\bullet$ ) $[2]$ e $[3]$ sono divisori dello zero
 ( $\mathbb{Z}_{5}$ , $+$ , $\bullet$ )
 
 Sono privi di divisori dello zero.
+
+
+##Dominio d'integrità
+
+Un domminio d'integrità è un anello commutativo privo di divisori dello zero. Più precisamente un anello ( $A$ , $+$ , $\bullet$ ) è un dominio d'integrità $\iff$
+
+$\forall$ $a,b$ $\in$ $A$ 
+
+$a$ $\bullet$ $b$ = $b$ $\bullet$ $a$
+$a$ $\bullet$ $b$ = 0 $\implies$ $a=0$ $\lor$ $b=0$
+
+Esempio di dominio d'integrità sono:
+
+( $\mathbb{Z}$ , $+$ , $\bullet$ )
+
+( $\mathbb{Z}_{5}$ , $+$ , $\bullet$ ) o tutti gli $\mathbb{Z}_{m}$ con $m$ numero primo
