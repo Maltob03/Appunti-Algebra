@@ -461,6 +461,25 @@ In ( $\mathbb{Z}_{6}$ , $+$ , $\bullet$ ) $[2]$ e $[3]$ sono divisori dello zero
 
 Sono privi di divisori dello zero.
 
+Se un elemento è divisore dello zero non può essere invertibile
+
+Per essere elemento invertibile deve dare resto 1 ad esempio
+
+$\mathbb{Z}_10$ = $\{ 0,1,2,3,4,5,6,7,8,9\}$
+
+$U$($\mathbb{Z}_{10}$) = $\{ 1 , 3 , 7 , 9\}$
+
+Div dello zero = $\{ 2, 5, 4, 6 , 8 \}$
+
+
+####Teorema 
+
+Sia a $\in$ $\mathbb{Z}_{m}^{*}$ = $\mathbb{Z}_{m}$ \ {0}
+
+i) a è divisore dello 0 $\iff$ M.C.D ($ a , m$) $\not$= 1
+
+ii) a è invertibile $\iff$ M.C.D ($ a, m$) = 1
+
 
 ##Dominio d'integrità
 
@@ -478,4 +497,18 @@ Esempio di dominio d'integrità sono:
 ( $\mathbb{Z}_{5}$ , $+$ , $\bullet$ ) o tutti gli $\mathbb{Z}_{m}$ con $m$ numero primo
 
 
+##Elementi nilpotenti
 
+Elementi nilpotenti in un anello unitario:
+
+$a$ $\in$ $A$ nilpotente se $\exists$ $n$ > 0 :
+
+$a^{n}$ = 0
+
+Esempio:
+
+$[4]_{8}$ 
+
+$[4]_{8}^{2}$ = 0  
+
+$[4]_{8}^{3}$ = 0
