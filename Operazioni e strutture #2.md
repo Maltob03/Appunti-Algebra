@@ -114,7 +114,7 @@ Esempi di parte stabile genertata:
 ( $\mathbb{Z}$ , $+$ ) < {$2$} > = { $2^{n}$ | $n$ $\in$ $\mathbb{N^{*}}$}
 
 
-##Conguenza
+##Congruenza
 
 Consideriamo un generico ( $S$ , $*$ ) con $R$ relazione di equivalenza in $S$
 
@@ -178,6 +178,15 @@ $a$ ($m$$\mathbb{Z}$) $b$ oppure ( a $\equiv_{m}$ $b$ , oppure $a$ $\equiv$ $b$ 
 
 $\exists$ $h$ $\in$ $\mathbb{Z}$ : $a-b$ = $m$$\bullet$ $h$ $\iff$ $a-b$ $\in$ $m$$\mathbb{Z}$
 
+Se $m$ = 0  $a$ $\equiv_{0}$ $b$ $\iff$ $a-b$ = 0 $\bullet$ $h$ = 0 $\iff$ $a=b$ 
+
+0$\mathbb{Z}$= $id_{Z}$
+
+Se $m$ = 1 $a$ $\equiv$ $b$ $\iff$ $a-b$ = 1 $\bullet$ $h$
+
+1$\mathbb{Z}$ = $tot$ $\mathbb{Z}$
+
+
 ####Proposizione : $m$$\mathbb{Z}$ è una relazione di equivalenza ed è compatibile con le operazioni $+$ , $\bullet$.
 
 **Per vedere che la relazione $m$$\mathbb{Z}$ sia di equivalenza dobbiamo verificare che :**
@@ -238,6 +247,171 @@ Quindi $ab$ ($m$$\mathbb{Z}$) $cd$
 
 $m$$\mathbb{Z}$ Risulta essere una congruenza in $\mathbb{Z}$
 
+
+
+###Teorema
+
+$\forall$ $a,b$ $\in$ $\mathbb{Z}$ e $b$ $\not$= 0 $\exists$! ($q,r$):
+
+$a=$ $b$ $\bullet$ $q$ + $r$ con 0$\le$$r$<$|b|$
+
+$r$ = $rest(a,b)$
+
+**Proposizione Sia $m$ > 0**
+
+$a$ $\equiv$ $b$ $(mod$ $m)$ $\iff$ $rest(a,m)$ = $rest(b,m)$
+
+$\leftarrow$
+
+$rest(a,m)$ = $rest(b,m)$ = $r$
+
+$a$ = $m$ $\bullet$ $q_{1}$ +$r$
+$a$ = $m$ $\bullet$ $q_{2}$ +$r$
+
+sottraggo membro a membro e ottengo:
+
+$a-b$ = $m$($q_{1}$ - $q_{2}$) $\rightarrow$ $a$$\equiv_{m}$$b$
+
+$\rightarrow$
+
+$a$$\equiv_{m}$$b$ $\implies$ $rest(a,m)$ = $rest(b,m)$
+
+$a$ = $m$ $\bullet$ $q_{1}$ +$r_{1}$
+$a$ = $m$ $\bullet$ $q_{2}$ +$r_{2}$
+
+0$\le$$r_{1}$<$|m|$
+0$\le$$r_{2}$<$|m|$
+
+Poniamo per ipotesi che $r_{1}$ > $r_{2}$
+
+Sottraendo membro a membro otteniamo:
+
+$a-b$ = $m$($q_{1}$ - $q_{2}$) + ( $r_{1}$ - $r_{2}$ )
+
+sappiamo che $a-b$ essendo una congruenza è uguale a $m$ $\bullet$ $h$
+
+quindi otteniamo
+
+$m$ $\bullet$ $h$ = $a-b$ = $m$($q_{1}$ - $q_{2}$) + ( $r_{1}$ - $r_{2}$ )
+
+Ora sappiamo per ipotesi che la quantità $r_{1}$ - $r_{2}$ sia maggiore o uguale a 0 e strettamente minore di $m$.
+
+$r_{1}$ - $r_{2}$ è un multiplo di $m$. Per rispettare le condizioni elencate prima ($\le$0 e >$m$) $r_{1}$ - $r_{2}$ deve per forza essere = 0 e quindi :
+
+$r_{1}$ = $r_{2}$
+
+
+####Caratterizzazione
+
+Se m>0
+
+Possiamo definire un operazione $*$
+
+($*$) $a$ $\equiv$ $b$ $\iff$ $rest(a,m)$ = $rest(b,m)$
+
+$a$ $\in$ $\mathbb{Z}$
+
+**$m=0$** 
+
+$\rightarrow$ $[a]_{0}$ = {a} 
+
+$\mathbb{Z}_{0Z}$ = { {$a$} | $a$ $\in$ $\mathbb{Z}$ }
+
+**$m=1$** 
+
+$\rightarrow$ $[a]_{1}$ = $\mathbb{Z}$  
+
+$\mathbb{Z}_{1Z}$ =  {$\mathbb{Z}$ }
+
+**$m>1$** 
+
+$[a]_{m}$ = { $b$ | $a-b$ = $m$ $\bullet$ $h$ con $h$ $\in$ $\mathbb{Z}$ } = 
+
+$[rest(a,m)]$ = { $a+m$ $\bullet$ $h$ | $h$ $\in$ $\mathbb{Z}$ }
+
+$a$ $\equiv$ $rest(a,m)$ 
+
+$aRb$ $\iff$ $[a]_{R}$ = $[b]_{R}$
+
+
+####Facciamo un esempio pratico:
+
+m=2 e 5 $\in$ $\mathbb{Z}$
+
+$[5]_{2}$ = { 5 + 2 $\bullet$ $h$ | $h$ $\in$ $\mathbb{Z}$ } = $[1]_{2}$ = [$rest(5,2)=1$] = { 1+2 $\bullet$ $h$ | $h$ $\in$ $\mathbb{Z}$ } e corrisponde alla classe dispari.
+
+
+$[16]_{2}$ = { 16 + 2 $\bullet$ $h$ | $h$ $\in$ $\mathbb{Z}$ } = $[0]_{2}$ = [$rest(16,2)=0$] = { 2 $\bullet$ $h$ | $h$ $\in$ $\mathbb{Z}$ } e corrisponde alla classe dei numeri pari
+
+
+$\mathbb{Z}_{2}$ = $\mathbb{Z}_{2Z}$ = { $[0]$ , $[1] $ }
+
+----
+
+**Proposizione** 
+
+$\forall$ m $\geq$ 1 l'ordine di $\mathbb{Z}_{m}$ = $m$
+quindi |$\mathbb{Z}_{m}$| = $m$ e $\mathbb{Z}_{m}$ è rappresentato da :
+
+$\mathbb{Z}_{m}$ = { $[0]_{m}$ , $[1]_{m}$ , ... , $[m-1]_{m}$ } ovvero tutti i possibili resti.
+
+**Dimostrazione:**
+
+Sappiamo che $\forall$ $a$ $\in$ $\mathbb{Z}$
+
+$[a]_{m}$ = $[rest(a,m)]_{m}$ $\in$ { $[0]_{m}$ , ... , $[m-1]_{m}$ } quindi
+
+$\mathbb{Z}_{m}$ = { $[0]_{m}$ , $[1]_{m}$ , ... , $[m-1]_{m}$
+
+devo verificare che tale insieme ha ordine $m$ , ossia che se prendo 0 $\le$ $i,j$ $\le$ $m-1$ e $i$ $\not$= $j$ $\implies$ $[i]_{m}$ $\not$= $[j]_{m}$
+
+Supponiamo $i$ $\geq$ $j$
+
+0$\le$ $i-j$ $<$$m$ se $i$ $\equiv$ $j$ ($mod$ $m$) $\implies$ $i-j$ multiplo di $m$ $\implies$ $i-j=0$ $\implies$ $i=j$
+
+####Esercizio di esempio
+
+$\mathbb{Z}_{7}$ = { $[0]_{7}$ , $[1]_{7}$ , $[2]_{7}$ , $[3]_{7}$ , $[4]_{7}$ , $[5]_{7}$ , $[6]_{7}$ }
+
+$[-17]_{7}$ a quale classe corrisponde ???
+
+-17 = 7 $\bullet$ (-3) + 4
+
+quindi corrisponde alla classe $[4]_{7}$
+
+
+
+##L'anello dell'insieme resto
+
+**Proposizione:** ( $\mathbb{Z}_{m}$ , $+$ , $\bullet$ ) è un anello commutativo unitario.
+
+**Dimostrazione:** 
+
+( $\mathbb{Z}_{m}$ , $+$ ) gruppo abeliano: 
+
+$\forall$ $[a]_{m}$,$[b]_{m}$,$[c]_{m}$
+
+*Associatività*
+
+$[a]_{m}$ + ( $[b]_{m}$ + $[c]_{m}$ ) = $[a]_{m}$ + $[b+c]_{m}$ = $[a + (b+c)]_{m}$ = $[(a+b)+ c]_{m}$ = $[a+b]_{m}$ + $[c]_{m}$ = ( $[a]_{m}$ + $[b]_{m}$ ) + $[c]_{m}$
+
+*Commutatività nello stesso modo*
+
+*Elemento neutro*
+
+la classe $[0]_{m}$ è elmento neutro in quanto:
+
+$[a]_{m}$ + $[0]_{m}$ = $[a+0]_{m}$ = $[a]_{m}$
+
+$[0]_{m}$ ci sono tutti i multipli di m 
+
+**Proprietà**
+
+$-[a]_{m}$  = $[-a]_{m}$ = $[0]_{m}$ + $[-a]_{m}$ = $[m]_{m}$ + $[-a]_{m}$ = $[m-a]_{m}$
+
+Questo che significa:
+
+se prendiamo $[-17]_{7}$ = $[7-17]_{7}$ = $[10]_{7}$ = $[7-10]_{7}$ = $[-3]_{7}$ = $[7-3]_{7}$ = $[4]_{7}$
 
 ##Omomorfismi e isomorfismi
 
@@ -302,3 +476,6 @@ Esempio di dominio d'integrità sono:
 ( $\mathbb{Z}$ , $+$ , $\bullet$ )
 
 ( $\mathbb{Z}_{5}$ , $+$ , $\bullet$ ) o tutti gli $\mathbb{Z}_{m}$ con $m$ numero primo
+
+
+
