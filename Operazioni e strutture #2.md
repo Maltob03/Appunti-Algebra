@@ -476,9 +476,72 @@ Div dello zero = $\{ 2, 5, 4, 6 , 8 \}$
 
 Sia a $\in$ $\mathbb{Z}_{m}^{*}$ = $\mathbb{Z}_{m}$ \ {0}
 
-i) a è divisore dello 0 $\iff$ M.C.D ($ a , m$) $\not$= 1
 
-ii) a è invertibile $\iff$ M.C.D ($ a, m$) = 1
+i) a è invertibile $\iff$ M.C.D ($ a, m$) = 1
+
+ii) a è divisore dello 0 $\iff$ M.C.D ($ a , m$) = $d>1$
+
+(Quindi $\forall$ $a$ $\in$ $\mathbb{Z}$ a è invertibile o è divisore dello zero)
+
+Dimostrazione:
+
+i)
+
+( $a,m$ ) = 1 $\implies$ (PER BEZOUT) $\exists$ $h,k$ $\in$ $\mathbb{Z}$ :
+
+1 = $a \bullet h + m \bullet k$
+
+Siamo in $\mathbb{Z}_{m}$ quindi la classe di $mk$ = 0. Abbiamo quindi che:
+
+1 = $a \bullet h$
+Quindi $a$ è elemento invertibile e $h$ il suo inverso
+
+Ora dimostro che se $a$ invertibile allora M.C.D ( $a,m$ ) = 1 
+
+$a$ invertibile vuol dire che:
+
+$\exists$ $b$ : $a \bullet b = 1 $
+
+La classe di 1 in $\mathbb{Z}_{m}$ corrisponde a { $1 + m \bullet k | k \in \mathbb{Z} $} $\implies$ 
+
+$ a \bullet b = 1 + mk$ e quindi 
+
+$ 1 = a \bullet b - mk$
+
+Se $b$ è divisore comune di $a$ e di $m$ $\implies$ $b$ divide tutte le combinazioni di $a$ e di $m$ $\implies$
+
+$ d $ $/ a \bullet b - m \bullet k = 1 $ $\implies$
+
+$d$ = $\pm$ 1 $\implies$ M.C.D ( $a,m$ ) = 1
+
+ii) ($a,m$) = $d>1$ $\iff$ $a$ divisore dello zero
+
+$a = a_{1} \bullet d$
+$m = m_{1} \bullet d$
+
+1 < $a_{1} < a$
+1 < $m_{1} < m$
+
+$m_{1}$ $\not= 0$
+
+$a \bullet m_{1} = a_{1} \bullet d \bullet m_{1} = a_{1} \bullet m = 0$
+
+*Spiegazione nella seconda uguaglianza sostituisco $a$ con $a_{1} \bullet d$ , sostituisco poi $d \bullet m_{1} $ con $m$ . $a_{1}m$ è la classe dei multipli di $\mathbb{Z}_{m}$ che corrisponde a 0*
+
+Viceversa suppongo che $a$ sia divisore dello 0 $\exists$ $b$ $\not$= 0 :
+
+$a$ $\bullet$ $b$ = 0 = { $m$ $\bullet$ $h$ | $h$ $\in$ $\mathbb{Z}$}
+
+$a$ $\bullet$ $b$ = $m$ $\bullet$ $h$
+
+Sia $m$ = $p_{1} ... p_{r}$ per il teorema fondamentale dell'aritmetica
+
+$\forall$ $i$ $p_{i}$ / $a$ $\bullet$ $b$ $\implies$ $p_{i} / a $ oppure  $p_{} / b $
+
+se $p_{i}$ non divide a $\forall$ $p_{i}$ $\implies$ $p_{i}$ / $b$ $\forall$ $i$ $\implies$ $m$ / $b$ $\implies$ $b$ = 0 $\implies$ $\exists$ $i$ : $p_{i}$ / a $\implies$ $p_{i}$ / $d$ = ( $a,m$ )
+
+
+
 
 
 ##Dominio d'integrità
@@ -496,6 +559,14 @@ Esempio di dominio d'integrità sono:
 
 ( $\mathbb{Z}_{5}$ , $+$ , $\bullet$ ) o tutti gli $\mathbb{Z}_{m}$ con $m$ numero primo
 
+####Corollario
+
+( $\mathbb{Z}_{m}$ , $+$ , $\bullet$ ) è un campo $\iff$ $m$ è primo )
+
+( $\mathbb{Z}_{m}$ , $+$ , $\bullet$ ) è campo $\iff$  è dominio d'integrità
+
+( $a , m$ ) = 1 (primi tra loro) quindi $\forall$ $a$ : 1 $\le$ $a$ < $m$ equivale a richiedere che $m$ sia numero primo
+
 
 ##Elementi nilpotenti
 
@@ -512,3 +583,39 @@ $[4]_{8}$
 $[4]_{8}^{2}$ = 0  
 
 $[4]_{8}^{3}$ = 0
+
+$\mathbb{Z}_{m}$ con $m$ = $p_{1}^{\beta_{1}} \bullet p_{2}^{\beta_{2}} ... p_{t}^{\beta_{t}}$ e
+$\beta^{i}$ $\geq$ 1
+
+
+Esempio:
+
+
+$\mathbb{Z}_{60}$
+
+$60 = 2^{2} \bullet 3 \bullet 5$
+
+Se elevo tutto al quadrato tipo : ( $2 \bullet 3 \bullet 5 ) ^{2}$ quello che ottengo è sempre ( $2^{2} \bullet 3 \bullet 5 ) \bullet 3 \bullet 5 $
+
+I primi due termini tra parentesi ( $2^{2} \bullet 3 )$ comunque corrisponde a 60 , e quindi la classe di 0
+
+
+Altro esempio:
+
+$\mathbb{Z}_{48}$
+
+48 = $2^4 \bullet 3$ 
+
+Elementi nilpotenti sono:
+
+$2 \bullet 3$
+$2^{2} \bullet 3$
+$2^{3} \bullet 3$
+$2^{2} \bullet 3^{2}$
+
+Tutti questi elevati alla 4 danno sempre classe di 0
+
+
+Affinchè vi siano elementi nilpotenti m = primi distinti con almeno un elemento p elevato a potenza
+
+Se non vi sono potenze nel prodotto dei primi distiniti non vi saranno elementi nilpotenti.

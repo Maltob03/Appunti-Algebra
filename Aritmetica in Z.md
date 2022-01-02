@@ -587,3 +587,23 @@ $d$ / $a$, $d$ / $b$
 se $c$ / $a$ e $c$ / $b$ allora gli unici divisori di $c$ saranno gli $l_{h}$ $\implies$ $c$ / $d$
 
 $m(m.c.m) = a_{1} \bullet b_{1} \bullet d$
+
+
+##Funzione di Eulero
+
+La funzione di Eulero o indicatore di Gauss-Eulero corrisponde alla seguente funzione.
+
+$f$ : $n \in \mathbb{N}$ \ ${0,1}$ $\rightarrow$ $f(n)$ numero dei numeri primi minori di $n$ e primi con $n$
+
+Esempio:
+
+$f(2)$ = 1
+$f(3)$ = 2
+
+In generale se p è primo $f(p)$ = $p-1$
+
+$f(m)$ = | $U(\mathbb{Z}_{m})$ |
+
+ovvero l'ordine degli elementi invertibili di $\mathbb{Z}_{m}$
+
+$f(p \bullet q)$ = $f(p) \bullet f(q)$ = $(p-1) \bullet (q-1)$
