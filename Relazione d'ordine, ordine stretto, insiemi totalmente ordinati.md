@@ -125,3 +125,71 @@ Altro esempio di insieme non totalmente ordinato:
 
 
 
+##Elemento coprente
+
+($L , \le$) $a$ copre $b$ $\iff$ $b \le a e \not \exists c : b < c < a$
+
+Ad esempio in $S^{S}$ = {$  id_{S}, \tau, cost_{1}, cost_{2}$}
+
+$cost_{1}$ $R$ $id_{s}$ $R$ $cost_{2}$
+
+l'applicazione costante 1 è coperta dall'identità di S perchè in mezzo non c'è niente.
+
+
+##Diagramma di Hasse
+
+Quando ho un insieme ordinato posso disegnare il diagramma di Hasse, mettendo verso il basso gli elementi piu piccoli.
+
+
+Quando ho una relazione d'ordine totale il diagramma di Hasse è una retta
+
+##Minimo e Massimo
+
+In un insieme $S$ dove è definita una relazione d'ordine $R$:
+
+($S,R$) con $a \in S$ 
+
+$a$ è il minimo di $S$ $\iff$ $a \le b$ $\forall b \in S$
+
+$a$ è il massimo di $S$ $\iff$ $a \geq b$ $\forall b \in S$
+
+Il minimo (massimo) se esiste è unico
+
+$a_{1}, a_{2} = minS$ $a_{1} \le a_{2}, a_{2} \le a_{1} \implies a_{1}=a_{2}$
+
+
+##Massimale e minimale
+
+$a \in S$ è minimale in $S$ $\iff$ $\not \exists b \in S$ : $ b < a$
+oppure $\forall b \in S, b \le a \implies b=a$
+
+$a \in S$ è massimale in $S$ $\iff$ $\not \exists b \in S$:
+$ b > a$
+oppure $\forall b \in S, b \geq a \implies b=a$
+
+
+$a$ minimo $\implies$ $a$ minimale
+
+MA NON IL VICEVERSA
+
+####Lista di esempi di minimi e massimi
+
+($\mathbb{N}, \le $) min $\mathbb{N}$ = 0, $\not \exists$  $max$
+
+($\mathbb{Z}, \le $) min $\mathbb{N}$ = $\not \exists$ $min$, $\not \exists$  $max$
+
+($\mathbb{N}, \le $) max $\mathbb{N}$ = 0, min $\mathbb{N}$ = 1
+
+($P(s) \subseteq$) max $P(S)$ = $S$ , min $P(s)$ = $\varnothing$
+
+
+##Minoranti e Maggioranti
+
+Dato ($L , \le$) insieme ordinato ed un suo sottoinsieme $X$ :
+
+$\varnothing$ $\not$=  $\subseteq$ $L$
+
+minoranti di X = {$a \in L $ | $ a \le x \forall x \in X$}
+
+maggioranti di X = {$a \in L$ | $a \geq x, \forall x \in X$}
+
