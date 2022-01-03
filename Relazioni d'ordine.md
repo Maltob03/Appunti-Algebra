@@ -17,7 +17,7 @@ Definiamo quindi 5 proprietà delle relazioni binarie:
 ---
 
 
-Definiremo $R$ **relazione di equialenza** $\iff$ $R$ è :
+Definiremo $R$ **relazione di equivalenza** $\iff$ $R$ è :
 
 1. **Riflessiva**
 2. **Simmetrica**
@@ -25,14 +25,14 @@ Definiremo $R$ **relazione di equialenza** $\iff$ $R$ è :
 
 Definiremo $R$ **relazione d'ordine** $\iff$ $R$ è :
 
-1. **Antiriflessiva**
-2. **Asimmetrica**
+1. **Riflessiva**
+2. **Aimmetrica**
+3. **Transitiva**
 
 Definiremo $R$ **relazione d'ordine stretto** $\iff$ $R$ è :
 
 1. **Antiriflessiva**
-2. **Asimmetrica**
-3. **Transitiva**
+2. **Transitiva**
 
 Esempi di relazione d'ordine sono: 
 ($\mathbb{Z}$, $\subseteq$) $a$ $\subseteq$ $b$ 
