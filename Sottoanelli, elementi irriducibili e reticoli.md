@@ -228,3 +228,43 @@ minoranti $\{A,b\}$ = $\{X \in P(S) | X \subseteq A, X \subseteq B \}$ = { $X \i
 $\exists$ inf $\{a,b\}$ = $A \bigcap B$
 
 $\exists$ sup $\{a,b\}$ = $A \bigcup B$
+
+
+##Monoidi fattoriali
+
+Un monoide commutativo 
+
+($S$,$\bullet$) è fattoriale $\iff$ 
+
+$\forall a \in S$ \ {0} e $a$ non invertibile
+
+$a$ è prodotto di elementi irriducibili e tale decomposizione è unica a meno dell'ordine dei fattori e di elementi associati.
+
+($\mathbb{Z}$ , $\bullet$)
+
+$U(Z)$={1,-1}
+
+$\mathbb{Z}$ \ {0,1,-1}
+
+$\forall a \in \mathbb{Z}$ \ {0,1,-1}
+
+$a$ è primo o è prodotto di numeri primi e tale decomposizione è unica a meno dell'ordine dei fattori e del segno.
+
+Per queste osservazioni ($\mathbb{Z}$, $\bullet$) è un monoide fattoriale come conseguenza del teorema fondamentale dell'aritmetica.
+
+
+**Esempio di elemento irriducibile che non coincide come elemento primo.**
+
+$M = \{1, 2 \bullet h | h \in \mathbb{N}^{*}\}$
+
+quindi tutti i numeri pari e 1.
+
+Il numero 6 $\in$ $\mathbb{N}$
+
+$6 / 6 \bullet 6 = 36$
+6 / 36 = 2 $\bullet$ 18
+
+MA 6 $\not$ \ 2 E 6 $\not$ \ 18 in $M$
+
+div 6 = {1,6} 6 è irriducibile ma non è primo.
+
