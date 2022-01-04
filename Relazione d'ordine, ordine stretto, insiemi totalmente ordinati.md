@@ -193,3 +193,172 @@ minoranti di X = {$a \in L $ | $ a \le x \forall x \in X$}
 
 maggioranti di X = {$a \in L$ | $a \geq x, \forall x \in X$}
 
+##Divisori primi
+
+($\mathbb{N}, R$)
+
+$\pi(a)$ = {divisori primi di $A$}
+
+$\pi(0)$ = $P$
+
+$\pi(1)$ = $\varnothing$
+
+$\pi(2)$ = {2}
+
+$\pi(4)$ = {2}
+
+$aRb$ $\iff$ 1.$a=b$ oppure 2.$\pi(a) \subset \pi(b)$
+
+
+
+Riflessiva per 1.
+
+Asimmetrica $aRb$ e $bRa$ e P.A $a \not= b$
+
+$\implies$ $\pi(a) \subset \pi(b) \land \pi(b) \subset pi(a)$ $\implies$ $\pi(a) \subset \pi(a) \implies$ ASSURDO $\implies$ $a=b$
+
+Transitiva 
+
+$aRb$ (1. $a=b$ oppure 2. $\pi(a) \subset \pi(b)$)
+
+$bRc$ (1. $b=c$ oppure 2. $\pi(b) \subset \pi(c)$)
+
+Verifichiamo le condizioni:
+
+1 $\land$ 3 : $a=b$ $\land$ $b=c$ $\implies$ $a=c$ quindi $aRc$
+
+1 $\land$ 4 : $a=b$($\pi(a)=\pi(b)$) $\land$ $\pi(b)$ $\subset$ $\pi(c)$ $\implies$ $\pi(a) \subset \pi(c) \implies aRc$
+
+2 $\land$ 3 : $\pi(a) \subset pi(b) \land b=c (\pi(b) = \pi(c))$
+
+$\pi(a) \subset \pi(b) = \pi(c) \implies aRc$
+
+2 $\land$ 4 $\pi(a) \subset \pi(b) \land \pi(b) \subset pi(c) \implies \pi(a) \subset \pi(c) \implies aRc$
+
+Usiamo questa relazione per la seguente applicazine:
+
+$f : a \in \mathbb{N} \rightarrow \pi(a) \in P(P)$
+
+$f$ è iniettiva? NO perchè:
+
+$\pi(2) = $ {2} $ = \pi(4)$ ma 2 $\not=$ 4
+
+$f$ è suriettiva? NO perchè:
+
+immaginiamo l'insieme $A = \{p_{1},...,p_{n}\}$
+
+quindi ad esempio $\{2,5,7,11,17,43\}$
+
+un elemento $a \in A$ = $2 \bullet 5 \bullet 7 \bullet 11 \bullet 17 \bullet 43$
+
+quindi gli elementi $a \in A$ = $\{p_{1} \bullet p_{2} \bullet ... \bullet p_{n}\}$ 
+
+Non è suriettiva in quanto non esiste un elemento $a$ tale che l'insieme $P$ meno qualsiasi singleton faccia un numero appartenente all'insieme delle parti di P
+
+$\not$ $\exists$ $a$ | $P$ \ {2} = $\pi(a)$
+
+($\mathbb{N} , R$)
+
+$\pi(1)= \varnothing$
+
+1 = min $\mathbb{N}$
+0 = max $\mathbb{N}$
+
+minimali sono { $p^{n}$ | $n \in \mathbb{N}^{*}, p \in P$ }
+
+perchè $\pi(2)$ = 2 MA $\pi(4)=${2} 
+
+$\pi(2^{n})$ = {2}
+
+##Definizione di sup e inf
+
+($S$ , $\le$ ) $L \subseteq S$
+
+$inf$ $L$ = max {minoranti di L} se $\exists$
+$sup$ $L$ = min (maggioranti di L} se $\exists$.
+
+
+##Altro argomento.
+
+Suppongo di avere :
+
+($S , \le$) e ($T , \le$)
+
+$f: S \rightarrow T$
+
+$f$ è compatibile con $\le$ $\iff$ $\forall x,y \in S$ 
+
+$x \le y$ $\implies$ $f(x) \le f(y)$
+
+####Esempio
+
+($N, /$) e ($N, R$) dove $aRb$ $\iff$ { 1. $a=b$ oppure 2. $\pi(a) \subset \pi(b)$
+
+
+$f = id_{N} : a \in N \rightarrow a \in N$
+
+$a$ / $b$ $\rightarrow \pi(a) \subset \pi(b)$
+
+2 / 4 e $f(2)=2$ e $f(4)=4$
+
+MA 2 $\not$R 4
+
+Quindi non determina un applicazione
+
+
+Se pensiamo alla stessa applicazione ma nel codominio consideriamo $N$ con la relazione d'ordine usuale ($\le$)
+
+
+$a$ / $b$ $\implies$ $a \le b$ c'è compatibilità.
+
+
+
+##Ordinamento duale
+
+Consideriamo $S$ con la relazione d'ordine usuale.
+
+($S$ , $\le$) ordinamento duale $\le^{*}$
+
+$a \le^{*} b \iff b \le a$
+
+Questo determina una relazione d'ordine.
+
+##Matrici
+
+
+$M_{2,2}(R)$=$\begin{pmatrix} a_{11} & a_{12}\\ a_{21} & a_{22} \end{pmatrix}$ | $a_{i,j} \in R$
+
+Nelle matrici possiamo definire delle operazioni come somma o prodotto.
+
+( $M_{2,2}(R), + , \bullet$)
+
+
+$\begin{pmatrix} a_{11} & a_{12}\\ a_{21} & a_{22} \end{pmatrix}$ + $\begin{pmatrix} b_{11} & b_{12}\\ b_{21} & b_{22} \end{pmatrix}$ = 
+
+$\begin{pmatrix} a_{11}+b_{11} & a_{12}+b_{12}\\ a_{21}+b_{21} & a_{22}+b_{22} \end{pmatrix}$
+
+
+
+( $M_{2,2}(R), +$) Gruppo abeliano:
+
+1. Vale la proprietà associativa
+2. Esiste elemento neutro matrice nulla
+3. Ogni elemento ha opposto ed è $-M$
+4. Vale la proprietà commutatuva
+
+E dunque ( $M_{2,2}(R), +$) gruppo abeliano.
+
+Prodotto riga per colonna
+
+$\begin{pmatrix} a_{11} & a_{12}\\ a_{21} & a_{22} \end{pmatrix}$ $\bullet$ $\begin{pmatrix} b_{11} & b_{12}\\ b_{21} & b_{22} \end{pmatrix}$ = $\begin{pmatrix} c_{11} & c_{12}\\ c_{21} & c_{22} \end{pmatrix}$
+
+dove:
+
+$c_{11} = a_{11} \bullet b_{11} + a_{12} \bullet b_{21}$
+
+$c_{12} = a_{11} \bullet b_{12} + a_{12} \bullet b_{22}$
+
+$c_{11} = a_{21} \bullet b_{11} + a_{22} \bullet b_{21}$
+
+$c_{11} = a_{21} \bullet b_{12} + a_{22} \bullet b_{22}$
+
