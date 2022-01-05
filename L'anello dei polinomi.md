@@ -231,3 +231,158 @@ $f \sim g$ se sono entrambi monici coincidono.
 Infatti se $f(x) = a_{0} + a_{1}x +...+ a_{n}x^{n}$ e $g(x) = b_{0} + b_{1}x +...+ b_{n}x^{n}$
 
 e $f = h \bullet g \implies h=1$ e $f=g$
+
+
+I divisori banali di $f$ sono sempre gli elementi invertibili di $A_{[x]}$ e gli elementi associati
+
+
+$f(X) \in A_{[x]}$
+
+$f(x)$ è irriducibile $\iff$ 
+
+1. $f(x)$ non è invertibile
+2. Gli unici divisori di $f$ sono quelli banali
+
+$x^{2}+1 \in R_{[x]}$ è irriducibile in questo insieme
+
+$x^{2}+1 \in \mathbb{Z}_{2[x]}$ 
+
+Questo polinomio si può ridurre come $(x+1)(x+1)=(x+1)^{2}=(x^{2}+2x+1)$  *nota bene so tutte classi*
+
+$f(x)$ è irriducibile $\iff$ 
+
+1. $f(x)$ non è invertibile
+2. Gli unici divisori di $f$ sono quelli banali
+
+equivale a richiedere $\iff$
+
+1. $f$ non è invertibile
+2. Se $f=g \bullet h \implies f \sim g$ e $h$ $inv$ oppure $f \sim h$ e $g$ è $inv$
+
+
+$f(x) \in A_{[x]}$
+
+posso considerare l'applicazione polinomiale:
+
+$\bar{f}: a \in A \rightarrow \bar{f(a)} = a_{0} + a_{1}a + a_{2}a^{2}+...+a_{n}a^{n}$
+
+Ad esempio
+
+$f(x) = 3 + 5x^{2}-7x^{3} \in Q_{[x]}$
+
+$\bar{f(1)} = 3+5-7=1$
+
+$\bar{f( \frac{1}{2})} = 3 + \frac{5}{4}-\frac{7}{8} = \frac{24+10-7}{8}=\frac{27}{8}$
+
+
+
+
+##Radici di un polinomio
+
+$f$ ammette $c$ come radice (zero) $\iff$ $\bar{f(c)}=0$
+
+##Teorema
+
+Siano $f,g \in A_{[x]}$ e $g \not= 0$
+
+Supposto che il parametro direttore di $g$ sia invertibile allora $\exists! (q,r) : f(x)=g(x) \bullet q(x) +r(x)$
+
+con $r(x)=0$ oppure $gr(r)<gr(g)$
+
+**Dimostrazione:**
+
+$f(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+....a_{1}x + a_{0}$
+$g(x)=b_{n}x^{n}+b_{n-1}x^{n-1}+....b_{1}x + b_{0}$
+
+1. $f(x) = 0$ allora $q=r=0$ e $0=g \bullet 0 + 0$
+2. $f(x) \not= 0$ e $gr(f)<gr(g)$ allora $q=0$ e $r=f$ quindi $f=0 \bullet g + f$ quindi $r=f$ e $gr(f)<gr(g)$
+3. $gr(f)\geq gr(g)$ 
+
+Uso il principio d'induzione (II forma):
+
+$Pn :$ Sia $gr(f)=n \implies \exists q,r : f=g \bullet q + r$
+
+Base $P_{0}$ : Sia $gr(f)=0 \implies \exists q,r$ $f=g \bullet q + r$ e $r=0$ oppure $gr(r)<gr(g)$
+
+$gr(f)=0 \geq gr(g)=0$
+
+$f=a_{0}$ e $g=b_{0}$ parametro direttore di $g$ quindi $\exists$ $b_{0}^-1$
+
+e di conseguenza $f=a_{0}=b_{0} \bullet a_{0} + 0$
+
+
+QUINDI BASE D'INDUZIONE VERIFICATA
+
+Supponiamo ora vera 
+
+$P_{l} \forall 0 \le l \le gr(f)=n$ deve seguire Pn vera
+
+$f(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+....a_{1}x + a_{0}$
+$g(x)=b_{n}x^{n}+b_{n-1}x^{n-1}+....b_{1}x + b_{0}$
+
+$\exists bm^{-1}
+
+moltiplico il polinomio g per 
+
+$h(x) = g \bullet (a_{n}b_{m}^{-1}x^{n-m})= a_{n}x^{n}+b_{m-1} \bullet (a_{n}b^{m-1})x^{n-m-1}+...$
+
+$\bar{f(x)}=f(x)-h(x)=f(x)-g(x) \bullet a_{n}b^{-1}_{m}x^{n-m}$
+
+$gr(\bar f) < gr(f)$
+
+$P_{\bar{n}}$ è vera
+
+$\bar{f} = g \bullet \bar{q} + \bar{r}$ con $r=0$ oppure $gr(\bar{r})< gr (g)$
+
+$f = g \bullet a_{n} \bullet b^{-1}_{m}x^{n-m}+gq+r$
+
+metto g in evidenza quindi:
+
+$g(anb^{-1}_{m}x^{n-m}+q)+r
+
+Teorema dimostrato (per l'esistenza)
+
+Unicità:
+
+$f = g \bullet q_{1} + r_{1}= g \bullet q_{2}+r_{2}$
+
+$r_{1}=0$ $r_{2}=0$
+
+
+
+$gr(r_{1}) \le gr(g)$ oppure $gr(r_{2}) \le gr(g)$
+
+posso supporre che
+
+$gr(r_{1}) \le gr(r_{2})$ quindi
+
+
+
+$g(q_{q}-q_{2}) = gq_{1}-gq_{2}=r_{2}-r_{1}$
+
+$gr(g(q_{1}-q_{2}))=g(r_{2}-r_{1})<gr(g)$
+
+$\implies r_{2}-r_{1}=0 \implies$ $r_{1}= r_{2}$
+
+$g(q_{1}-q_{2})=0 \implies q_{1}=q_{2}$
+
+
+
+
+
+
+
+
+
+
+
+
+####Let's divide some polyname (credo si scriva così sto impazzendo)
+$f-g \bullet a_{m} \bullet b^{-1}_{m}x^{m-n}$=$f(x)= 5x^{6}+7x^{4}-x^{3}+3x^{2}+1$
+
+$g(x)= 2x^{3}-x+3$
+
+Entrambi i polinomi appartengono a $\mathbb{Q}$ se ero in $\mathbb{Z}$ non avrei potuto dividere, perchè  il parametro direttore di $g$ è 2 che in Z non è invertibile.
+
+
+Praiticamente qua devi fa la divisione dei polinomi e alle 22:00 non ne ho voglia. Falla domani

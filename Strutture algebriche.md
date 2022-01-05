@@ -7,7 +7,7 @@ Dati un insieme $S$ = 0 ed un operazione binaria interna $\perp$ tale che:
 
 ($S$, $\perp$) si dice **$semigruppo$** $\iff$ $\perp$ gode della proprietà associativa
 
-$\\forall$ $a,b,c$ $\in$ $S$ :
+$\forall$ $a,b,c$ $\in$ $S$ :
 
 $a$ $\perp$ ( $b$ $\perp$ $c$) = ( $a$ $\perp$  $b$ ) $\perp$ $c$ = $a$ $\perp$  $b$ $\perp$ $c$
 
@@ -234,6 +234,15 @@ Esempi di anelli unitari sono:
 ( $\mathbb{Z}$ . +, $\bullet$ ) Anello commutativo unitario
 ( $\mathbb{K}$ . +, $\bullet$ )
 
+
+Supponiamo ora un anello commutativo unitario:
+
+($A,+,\bullet$)
+
+Caratteristica di A {0 se $\forall n>0 n \bullet 1_{A}= 1_{A}+ 1_{A} n-volte \not= 0$ oppure $m se m=min\{n>0 | n \bullet 1_{A}=0$ }
+
+Caratteristica di $\mathbb{Z}$ è 0 pechè $\forall n > 0 n \bullet 1 \not= 04$
+Caratteristica di $\mathbb{Z}_{m}$ è $m$ perchè $1_{\mathbb{Z}_{m}} = \bar{1}$ e quindi $m \bullet \bar{1}= \bar{m} = 0$
 
 Esempio di verifica di un anello:
 
