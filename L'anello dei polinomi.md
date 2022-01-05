@@ -67,7 +67,7 @@ $f(x) \bullet g(x) = 3 + 22x + 5x^{2} - 17x^{3} -x^{4} +2x^{5}$
 
 ($A_{[x]}, \bullet$)
 
-ha come elemnto neutro :
+ha come elemento neutro :
 
 $a_{0}=1 e a_{n}=1$
 
@@ -133,7 +133,7 @@ $c_{n+m}= \sum ah \bullet bk = a_{m} \bullet b_{m} \not= 0$
 
 $\delta(f \bullet g)=n+m$
 
-$f(x) \not = 0
+$f(x) \not = 0$
 $\delta(f)=n$
 parametro direttore di f il coefficiente di $a_{n}
 
@@ -145,3 +145,89 @@ Sia ($A,+,\bullet$) dominio d'integrità, $\delta(f)=n,\delta(g)=m \rightarrow \
 In $\mathbb{Z}_{4}[x]$ 
 
 $(\bar{2} + \bar{2}x) \bullet (\bar{2}+\bar{2x})= (\bar{2}+\bar{2x})^{2}=\not \bar{4} + \not \bar{8x} + \not \bar 4x^{2}$ quindi alla fine è = $\bar{0}$
+
+Se $A{[x]}$ dominio d'integrità
+
+$f(x) \bullet f(x)^{-1}=1$
+
+$\delta(f) + \delta(f^{-1})$=$\delta(f(x) \bullet f^{-1}(x)) = \delta(1)=0$
+
+Quindi per forza di cose $\delta(f)=\delta(f^{-1})=0$
+
+**Esempio**
+
+$\mathbb{Z}_{4}[x]$
+
+$\delta(\bar{1}+\bar{2x})=1$
+
+$(\bar{1}+\bar{2x}) \bullet (\bar{1}+\bar{2x})$ = $\bar{4x^{2}}$ + $\bar{4x}$ + $\bar{1}$ = $\bar{1}$
+
+quindi $(\bar{1}+\bar{2x})$ è invertibile e il suo inverso è proprio $(\bar{1}+\bar{2x})^{-1}$ ma anche $(\bar{1}+\bar{2x^{n}})^{-1}$
+
+E se mentre in $U(\mathbb{Z}_{4}$ gli elementi invertibili sono 1,3 in $U(\mathbb{Z}_{4[x]}$ sono infiniti
+
+
+##Anello ordinato
+
+Sia ($A,+,\bullet$) anello commutativo unitario.
+
+Supponiamo che in $A$ sia definita una relazione d'ordine : ($A,\le$)
+
+$\le$ è compatibile con $+,\bullet$ $\iff$
+
+1. $\forall a,b,c \in A$ se $a \le b \implies a+c \le b+c$
+2. $\forall a,b,c \in A$ se $a \le b$ e $c>0$ $\implies a \bullet c \le b \bullet c$
+se $c < 0 \implies a \bullet c \geq b \bullet c$
+
+
+Esempi di anelli ordinati sono
+
+($\mathbb{Z},+,\bullet$) con $\le$
+
+($\mathbb{Q},+,\bullet$) con $\le$
+
+($\mathbb{R},+,\bullet$) con $\le$
+
+
+##Polinomi monici
+
+$f(x) = a_{0}+ a_{1}x+...+a_{n}x^{n}$
+
+parametro direttore di f è $a_{n} : a_{n} \not= 0$ e $a_{m}=0 \forall m > n$
+
+$f(x)$ MONICO $\iff$ parametro direttore = 1
+
+Due polinomi si dicono assiocati se esiste un polinomio tale che $f(x)=h(x) \bullet g(x)$
+
+$f(x) \sim g(x) \iff \exists h(x) \in U(A_{[x]}) | f(x) = h(x) \bullet g(x)$
+
+Se $A$ dominio d'integrità
+
+$U(A_{[x]})=U(A)$ (vale il teorema di addizione dei gradi)
+
+non è piu vero se $A$ non è dominio d'integrità
+
+Se $A$ è dominio d'integrità e $f \sim g$ (sono polinomi associati) $\implies$ $\delta(f)=\delta(g)
+
+infatti:
+
+$f \sim g \iff \exists h(x) \in U(A_{[x]})= U(A)$ visto che $A$ è dominio d'integrità
+
+$\implies \delta h(0)$
+
+$f=h \bullet g \implies \delta(f) = \delta(h \bullet g) = \delta(h) + \delta(g) = \delta (g)$
+
+Se $A$ è un campo ad ogni polinomio non nullo è associato un unico polinomio monico.
+
+$f(x) = a_{0} + a_{1}x +...+ a_{n}x^{n}$
+
+$\exists a^{-1}_{n}$
+
+$a^{-1}_{n} \bullet f(x) = a^{-1}_{n} \bullet a_{0} + a^{-1}n \bullet a_{1}x +...+ a_{n}^{-1} \bullet a_{n}x^{n}$ è monico di grado $n$
+
+
+$f \sim g$ se sono entrambi monici coincidono.
+
+Infatti se $f(x) = a_{0} + a_{1}x +...+ a_{n}x^{n}$ e $g(x) = b_{0} + b_{1}x +...+ b_{n}x^{n}$
+
+e $f = h \bullet g \implies h=1$ e $f=g$

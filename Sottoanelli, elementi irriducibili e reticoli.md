@@ -82,7 +82,7 @@ $\forall a \in \mathbb{Z}$
 
 $\ a \bullet (mh) \in m\mathbb{Z}$
 
-$m\mathbb{Z} ideale di \mathbb{Z} $
+$m\mathbb{Z}$ ideale di $\mathbb{Z} $
 
 --
 
@@ -199,35 +199,7 @@ $5 = 5 \bullet ( 5 \bullet 4)$
 $4 = 7 \bullet ( 7 \bullet 4)$
 
 
-##Definizione di reticolo
 
-Un insieme ordinato ($L , \le$) si dice reticolo $\iff$ $\forall a,b \in L$ $\exists$ $l'inf\{a,b\}$ e il $sup\{a,b\}$
-
-L'$inf\{a,b\}$ viene indicato con $a \land b$
-
-L'$sup\{a,b\}$ viene indicato con $a \lor b$
-
-**MI RACCOMANDO E' PER a,b NON PER L**
-
-
-Se ($L, \le$) totalmente ordinato $\implies$ $L$ reticolo.
-
-$\forall a,b \in L a \le b$ oppure $b \le a$ quindi:
-
-$ \exists min \{a,b\} = a = inf \{a,b\}$
-$ \exists max \{a,b\} = b = sup \{a,b\}$
-
-**Non necessariamente se è un reticolo è totalmente ordinato**
-
-($P(S) , \subseteq$) 
-
-$\{A,B\}$
-
-minoranti $\{A,b\}$ = $\{X \in P(S) | X \subseteq A, X \subseteq B \}$ = { $X \in P(S) | x \subseteq A \bigcap B\}$
-
-$\exists$ inf $\{a,b\}$ = $A \bigcap B$
-
-$\exists$ sup $\{a,b\}$ = $A \bigcup B$
 
 
 ##Monoidi fattoriali

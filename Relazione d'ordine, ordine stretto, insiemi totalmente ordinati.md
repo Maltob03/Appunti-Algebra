@@ -98,7 +98,7 @@ $\mathbb{C}$ = { $a +ib$ | $a,b \in \mathbb{R} , i^{2} = -1 $}
 $e = a +ib$
 $f = c +id$ 
 
-$e$ $\le$ $f$ $\iff$ ${ 1. e=f$  $2. a^{2}+b^{2}=c^{2}+d^{2}$
+$e$ $\le$ $f$ $\iff$ $\{ 1. e=f$  $2. a^{2}+b^{2}=c^{2}+d^{2}$
 
 $\le$ è riflessiva
 
@@ -193,6 +193,18 @@ minoranti di X = {$a \in L $ | $ a \le x \forall x \in X$}
 
 maggioranti di X = {$a \in L$ | $a \geq x, \forall x \in X$}
 
+In ($\mathbb{N}, /$)
+
+$\forall a,b \in \mathbb{N}$
+
+minoranti {a,b} = divisori comuni di a e b.
+
+inf{a,b} = max divisori comuni = M.C.D
+
+maggioranti {a,b} = multipli comuni di a,b
+
+sup = min multipli comuni = m.c.m
+
 ##Divisori primi
 
 ($\mathbb{N}, R$)
@@ -278,17 +290,17 @@ $inf$ $L$ = max {minoranti di L} se $\exists$
 $sup$ $L$ = min (maggioranti di L} se $\exists$.
 
 
-##Altro argomento.
+##Compatibilità relazione d'ordine
 
 Suppongo di avere :
 
-($S , \le$) e ($T , \le$)
+($S , \le$_{1}) e ($T , \le_{2}$)
 
 $f: S \rightarrow T$
 
 $f$ è compatibile con $\le$ $\iff$ $\forall x,y \in S$ 
 
-$x \le y$ $\implies$ $f(x) \le f(y)$
+$x \le_{1} y$ $\implies$ $f(x) \le_{2} f(y)$
 
 ####Esempio
 
