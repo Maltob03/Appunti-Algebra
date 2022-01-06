@@ -371,12 +371,6 @@ $g(q_{1}-q_{2})=0 \implies q_{1}=q_{2}$
 
 
 
-
-
-
-
-
-
 ####Let's divide some polyname (credo si scriva così sto impazzendo)
 $f-g \bullet a_{m} \bullet b^{-1}_{m}x^{m-n}$=$f(x)= 5x^{6}+7x^{4}-x^{3}+3x^{2}+1$
 
@@ -386,3 +380,128 @@ Entrambi i polinomi appartengono a $\mathbb{Q}$ se ero in $\mathbb{Z}$ non avrei
 
 
 Praiticamente qua devi fa la divisione dei polinomi e alle 22:00 non ne ho voglia. Falla domani
+
+
+----
+
+
+
+
+
+
+
+
+
+Dato l'anello di polinomio ($A_{[x]},+,\bullet$)
+
+Se $A$ è campo $f(x)$ irriducibile se {1. $f(x)$ non invertibile o 2. $f=g \bullet h \implies f \sim g$ e $h$ $inv$}
+
+Se $A$ è campo $\iff$ { 1. $f(x)$ non è invertibile, 2.$f(x)$ non si puo esprimere come il prodotto di due polinomi aventi entrambi grado<grado di f }
+
+
+Se $A$ non è campo questo non è piu vero
+
+$2x + 4$ $\in \mathbb{Z}_{[x]}$
+
+Infatti si scrive come $2 \bullet (x+2)$ dove ne 2 ne $(x+2)$ sono invertibili ne associati.
+
+In $Q_{[x]} questi fattori sono banali , 2 è invertibile.
+
+Conseguenza:
+
+Se $A$ è campo i polinomi di primo grado sono sempre irriducibili
+
+Se ho un polinomio di $\delta(f)=1$
+
+$f=g \bullet h$ avrò $\delta(f)=\delta(g)+\delta(h)$
+
+Perchè la somma deve essere 1 allora $f \sim g$ e dunque $f$ irriducibile.
+
+Esempi:
+
+$f(x)=-x +3 $ questo è riducibile perchè se voglio scriverlo come $-x+3=h \bullet g$
+
+E poi il parametro direttore di $f$ deve essere = al parametro direttore di $g$ $\implies$ $h=h_{0}$ e $g=b_{0}+b_{1}x$
+
+Quindi $h_{0} \bullet b_{1} = -1$ 
+
+quindi $h_{0}=+-1 e$ quindi $f \sim g$
+
+Altro esempio:
+
+$k(x)=6x-3=3(2x-1$
+
+3 non è invertibile quindi divisore proprio
+3 è associato a $k(x)$ No perchè grado di k=1 e grado di 3=0
+
+2x-1 non è invertibile perchè il grado è uguale a 1
+2x-1 non è associato
+
+3 e (2x-1) sono divisori propri di k(x) in $\mathbb{Z}_{[x]}$
+
+in $\mathbb{Q}_{[x]}$ sono divisori banali.
+
+##Divisibilità tra polinomi
+
+($A_{[x]},+,\bullet)$
+
+Considerati due polimomi $f(x),g(x)$
+
+$g(x)$ \ f(x)$ \iff \exists h(x): f(x) = g(x) \bullet h(x)$ ovvero che rest ($f(x),g(x))=0
+
+##M.C.D tra polinomi
+
+$d(x)$ è M.C.D di ($f(x),g(x)$) $\iff$ 
+
+1.$ d(x) / f(x) , d(x) / g(x)$
+
+2.$\forall h(x) / f(x)$ e $h(x) / fg(x)$ $\implies$ $h(x) / d(x)$
+
+$[d(x)]_{\sim}$ = $\{c \bullet d(x) | c \in A^{*}\}$
+
+Il M.C.D in $A[x]$ è quello monico
+
+$[d(x)]_{\sim}$
+
+$d(x)= d_{0}+d_[1]x+...+d_{l}x^{l}$
+
+$\exists d_{l}^{-1}$
+
+$d_{l}^{-1} \bullet d(x)$ è monico ed è associato a $d(x)$
+
+Per garantire l'esistenza di questo M.C.D si sfrutta il teorema di Bezout.
+
+##Teorema di Bezout per i polinomi
+
+$(A_{[x]},+,\bullet$)
+
+Sia $(A_{[x]},+,\bullet$) campo
+
+$\forall f(x),g(x) \in A_{[x]}$
+
+$\exists d(x) M.C.D (f(x),g(x)) ed \exists (u(x),v(x)):$
+
+$d(x) = u(x) \bullet f(x) + v(x) \bullet g(x)
+
+Dimostrazione
+
+$f(x)=g(x) \bullet q_{1}(x) + r_{1}(x)$ con $r_{1}=0$ oppure $\delta(r_{1}<\delta(g))$
+
+$g(x)=r_{1} \bullet q_{2} + r_{2}$ con $r_{2 = 0}$ oppure $\delta(r_{2}) < \delta(r_{1})$
+
+l'ultimo resto non nullo è M.C.D ($f(x),g(x))$ e lo si può scrivere come combinazione lineare
+
+####Vari esempi di calcolo di M.C.D
+
+
+##Teorema di fattorizzazione
+
+Sia ($A_{[x]},+,\bullet$) un campo allora
+
+$\forall f(x) \in A_{[x]}$ \ $A$
+
+$f(x)$ o è irriducibile o è prodotto di polinomi irriducibili e tale decomposizione è unica al meno dell'ordine dei fattori e di elementi associati.
+
+##Esistenza m.c.m
+
+m.c.m ($f,g$) = m(x) = $\frac{f \bullet g}{d}$

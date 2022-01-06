@@ -102,3 +102,5 @@ Se ho un anello booleano definisco la relazione d'ordine come :
 $a \le b \iff a \bullet b = a$
 
 Posso cosi passare tra le tre strutture
+
+
